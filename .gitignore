@@ -1,71 +1,147 @@
-# Compiled object files
-*.o
-*.obj
+# Compilação do .NET
+bin/
+obj/
+[Bb]uild/
+*.app
+*.ipa
+*.apk
+*.aab
+*.ap_
 
-# Logs and database files
-*.log
-*.ldf
-*.mdf
+# Publicação e empacotamento
+*.publish/
+*.publishxml
+*.manifest
 
-# Visual Studio specific files
+# Configurações do Visual Studio
 .vs/
 .vscode/
+.idea/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-.vsconfig
+*.iml
 
-# Build results
-bin/
-obj/
-
-# Configuration
-appsettings*.json
-launchSettings.json
-
-# JetBrains Rider specific files
+# Configurações do JetBrains Rider
 .idea/
 .idea_modules/
+*.ipr
+*.iws
 
-# Mac build results
-build/
-DerivedData/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-*.mode2v3
-*.perspectivev3
-xcuserdata/
-*.xccheckout
-*.xcuserstate
-
-# MAUI specific
-.platforms/
-*.apk
-*.aab
-*.ipa
-*.app
-*.dll
-*.dSYM
-*.nupkg
-
-# Mono Auto Generated Files
-mono_crash.*
-
-# NuGet Packages
-*.nupkg
+# Dependências e pacotes
 packages/
+project.lock.json
+project.fragment.lock.json
+project.nuget.cache
 .nuget/
 
-# Node.js files (in case of using Node for some tools)
-node_modules/
-npm-debug.log*
+# Configurações locais
+*.swp
+*.tmp
+*.cache
+*.log
+*.bak
+*.orig
+*.rej
 
-# IDE Specific
-.idea/
-*.sln.iml
+# Arquivos gerados de teste
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
 
-# Sensitive data
+# Arquivos de log
+*.log
+*.tlog
+*.pidb
+
+# Arquivos específicos do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Arquivos específicos do Linux
+*~
+.*.swp
+.*.swo
+
+# Arquivos específicos do Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Arquivos específicos do Android
+.gradle/
+.android/
+local.properties
+
+# Arquivos específicos do iOS
+xcuserdata/
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserstate
+*.nib
+*.plist
+
+# Arquivos de configuração e segurança
 secrets.json
-secrets/*.json
+.env
+.env.*
+
+# Outros arquivos sensíveis ou temporários
+*.pfx
+*.key
+*.cer
+*.crt
+*.pem
+*.json.lock
+*.lock.json
+
+# Recursos gerados automaticamente pelo MAUI
+.platforms/
+.resources/
+
+# Cache do NuGet
+*.nupkg
+*.snupkg
+
+# Configurações de ferramentas de terceiros
+.idea/
+*.iml
+*.ipr
+*.iws
+*.moved-aside
+
+# Arquivos de relatórios de erros e depuração
+hs_err_pid*
+crashlog-*.txt
+
+# Logs e histórico de depuração
+*.log
+*.trace
+*.hist
+
+# Arquivos relacionados a dependências locais
+node_modules/
+bower_components/
+
+# Configurações e backups do editor
+*.bak
+*.backup
+*.swp
+*.tmp
+
+# Arquivos de design ou protótipos
+*.sketch
+*.psd
+*.xcf
+*.fig
+
+# Arquivos gerados para análise estática ou ferramentas de lint
+coverage/
+.lcov/
+*.gcov
+*.gcda
+*.gcno
